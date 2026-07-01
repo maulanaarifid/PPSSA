@@ -1,0 +1,15 @@
+# ==========================================
+# Robots.txt
+# Pondok Pesantren Salafiyah Syafi'i Akrom
+# https://ponpessalafiyahsyafiiakrom.com
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Blokir folder sistem jika nanti ada
+Disallow: /cgi-bin/
+Disallow: /.well-known/
+
+# Lokasi sitemap
+Sitemap: https://ponpessalafiyahsyafiiakrom.com/sitemap.xml
