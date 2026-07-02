@@ -126,7 +126,7 @@
                 </ul>
             </nav>
 
-            <button class="mobile-nav-toggle bi bi-list"></button>
+            <button class="mobile-nav-toggle bi bi-list" aria-label="Toggle Navigation" aria-expanded="false"></button>
         </div>
     </header>
 
@@ -169,11 +169,13 @@
                     </div>
                 </div>
 
-                <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+                <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev"
+                    aria-label="Previous Slide">
                     <span class="carousel-control-prev-icon bi bi-chevron-left"></span>
                 </a>
 
-                <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+                <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next"
+                    aria-label="Next Slide">
                     <span class="carousel-control-next-icon bi bi-chevron-right"></span>
                 </a>
             </div>
@@ -206,7 +208,8 @@
                 <section id="sejarah" class="mb-5">
                     <div class="row align-items-center g-4">
                         <div class="col-lg-5" data-aos="fade-right">
-                            <img src="assets/img/kyaiku/tokohsa.webp" alt="Sejarah PPSSA" class="img-fluid rounded">
+                            <img src="assets/img/kyaiku/tokohsa.webp" alt="Sejarah PPSSA" class="img-fluid rounded"
+                                loading="lazy">
                         </div>
                         <div class="col-lg-7" data-aos="fade-left">
                             <h4 class="fw-bold mb-3">Sejarah Singkat</h4>
@@ -428,191 +431,93 @@
         </section>
 
         <!-- Sarpras & SPS -->
-        <section class="py-5 sarpras-section" style="background-color: #f3f9ff;">
-            <div class="container">
-                <div class="row g-4">
+        <section class="py-5 sarpras-section">
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row g-4 align-items-stretch">
 
                     <!-- Sarana Prasarana -->
-                    <div class="col-12 col-md-8" data-aos="fade-right">
-                        <div class="card border-0 shadow-sm h-100">
-                            <div class="card-body p-4">
-                                <h4 class="fw-bold mb-3">Sarana dan Prasarana</h4>
+                    <div class="col-12 col-xl-8" data-aos="fade-right">
+                        <div class="sarpras-card">
+                            <h4 class="fw-bold mb-1">Sarana dan Prasarana</h4>
+                            <p class="text-muted small mb-0">Fasilitas pendukung pendidikan santri PPSSA.</p>
 
-                                <div class="row g-2">
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Masjid Ponpes</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Asrama santri (dipisah per-angkatan &amp; per jenjang
-                                                pendidikan)</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Makan 2x sehari (dari pondok)</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Ruang kelas yang representatif</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Gedung sekolah yang memadai</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Kantin di dalam pondok</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Mini Market</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Laundry dalam pondok</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Koperasi Pondok</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Budidaya Ikan Lele</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>BLK Komunitas Syafi'i Akrom (Program Desain Grafis)</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Dapur umum</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Aula pertemuan</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Koperasi</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Ruang kesehatan</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Wali kamar</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Lapangan olahraga</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Pantauan CCTV 24 jam</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>MCK dan sanitasi</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12 col-sm-6">
-                                        <div class="sarpras-item">
-                                            <i class="bi bi-check-circle icon-orange"></i>
-                                            <span>Sarana penunjang lainnya</span>
-                                        </div>
-                                    </div>
-
+                            <div class="sarpras-grid">
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Masjid Ponpes</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Asrama Santri</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Makan 2x Sehari</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Ruang Kelas</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Gedung Sekolah</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Kantin Pondok</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Mini Market</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Laundry Pondok</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Koperasi Pondok</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Budidaya Ikan
+                                        Lele</span></div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>BLK Komunitas</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Dapur Umum</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Aula Pertemuan</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Ruang Kesehatan</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Wali Kamar</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>Lapangan
+                                        Olahraga</span></div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>CCTV 24 Jam</span>
+                                </div>
+                                <div class="sarpras-item"><i class="bi bi-check-circle"></i><span>MCK & Sanitasi</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <!-- Program SPS -->
-                    <div class="col-12 col-md-4" data-aos="fade-left">
-                        <div class="card border-0 shadow-sm h-100">
-                            <div class="card-body p-4">
-                                <h4 class="fw-bold mb-3">Program Pondok Plus Sekolah (SPS)</h4>
+                    <div class="col-12 col-xl-4" data-aos="fade-left">
+                        <div class="sps-card d-flex flex-column">
+                            <h4 class="fw-bold mb-1">Program SPS</h4>
+                            <p class="text-muted small mb-0">Pondok Plus Sekolah</p>
 
-                                <p class="text-muted small mb-3">
-                                    Pengajian kitab kuning / kitab klasik pesantren, para santri mendapatkan manfaat:
+                            <ul class="list-unstyled mb-auto sps-list">
+                                <li>
+                                    <i class="bi bi-journal-bookmark"></i>
+                                    <span>Pengetahuan agama dari karya ulama salaf</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-chat-quote"></i>
+                                    <span>Mengerti makna & maksud kitab</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-person-lines-fill"></i>
+                                    <span>Melatih tata bahasa yang santun</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-lightbulb"></i>
+                                    <span>Melatih pemikiran santri mengembangkan ilmu agama</span>
+                                </li>
+                            </ul>
+
+                            <div class="registration-highlight mt-4 p-4 rounded" style="background: var(--gray-light);">
+                                <h6 class="fw-bold mb-2">Informasi Lebih Lanjut</h6>
+                                <p class="small text-muted mb-3" style="line-height: 1.5;">
+                                    Informasi lebih lanjut mengenai alur, persyaratan, dan jadwal penerimaan santri
+                                    kunjungi IG kami.
                                 </p>
-
-                                <ul class="list-unstyled mb-0 sps-list">
-                                    <li>
-                                        <i class="bi bi-check-circle icon-orange"></i>
-                                        Mendapatkan pengetahuan agama Islam dari karya ulama salaf
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle icon-orange"></i>
-                                        Mengerti makna & maksud kitab
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle icon-orange"></i>
-                                        Melatih tata bahasa yang santun
-                                    </li>
-                                    <li>
-                                        <i class="bi bi-check-circle icon-orange"></i>
-                                        Melatih pemikiran santri dalam mengembangkan ilmu agama
-                                    </li>
-                                </ul>
+                                <a href="https://www.instagram.com/ponpessyafiiakrom.official"
+                                    class="btn btn-instagram rounded-pill px-4 py-2 fw-semibold w-100 d-flex justify-content-center align-items-center gap-2"
+                                    target="_blank" aria-label="Kunjungi Instagram">
+                                    <i class="bi bi-instagram"></i> Kunjungi Instagram
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -634,7 +539,7 @@
                         <div class="card border-0 shadow-sm h-100">
                             <div class="ratio ratio-1x1">
                                 <img src="assets/img/kyaiku/abahumi1.webp" class="img-fluid object-fit-cover"
-                                    alt="Pengasuh">
+                                    alt="Pengasuh" loading="lazy">
                             </div>
 
                             <div class="card-body">
@@ -649,7 +554,7 @@
                         <div class="card border-0 shadow-sm h-100">
                             <div class="ratio ratio-1x1">
                                 <img src="assets/img/kyaiku/abah-muharrom.webp" class="img-fluid object-fit-cover"
-                                    alt="Pengasuh">
+                                    alt="Pengasuh" loading="lazy">
                             </div>
 
                             <div class="card-body">
@@ -664,7 +569,7 @@
                         <div class="card border-0 shadow-sm h-100">
                             <div class="ratio ratio-1x1">
                                 <img src="assets/img/kyaiku/abah-abidin.webp" class="img-fluid object-fit-cover"
-                                    alt="Pengasuh">
+                                    alt="Pengasuh" loading="lazy">
                             </div>
 
                             <div class="card-body">
@@ -679,7 +584,7 @@
                         <div class="card border-0 shadow-sm h-100">
                             <div class="ratio ratio-1x1">
                                 <img src="assets/img/kyaiku/abahumi2.webp" class="img-fluid object-fit-cover"
-                                    alt="Pengasuh">
+                                    alt="Pengasuh" loading="lazy">
                             </div>
 
                             <div class="card-body">
@@ -705,19 +610,19 @@
 
                 <div class="position-relative">
 
-                    <button class="nav-btn start-0" onclick="scrollPrestasi(-1)">
+                    <button class="nav-btn start-0" onclick="scrollPrestasi(-1)" aria-label="Scroll Kiri">
                         <i class="bi bi-chevron-left"></i>
                     </button>
 
-                    <button class="nav-btn end-0" onclick="scrollPrestasi(1)">
+                    <button class="nav-btn end-0" onclick="scrollPrestasi(1)" aria-label="Scroll Kanan">
                         <i class="bi bi-chevron-right"></i>
                     </button>
 
                     <!-- Scroll Area -->
-                    <div id="prestasiScroll" class="d-flex gap-3 overflow-auto prestasi-scroll">
+                    <div id="prestasiScroll" class="d-flex gap-3 prestasi-scroll-container">
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi1.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi1.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 1</span>
                                 <p class="small text-muted mb-0">
@@ -727,7 +632,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi2.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi2.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 1</span>
                                 <p class="small text-muted mb-0">
@@ -737,7 +642,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi3.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi3.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Santri Teladan</span>
                                 <p class="small text-muted mb-0">
@@ -747,7 +652,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi4.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi4.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Santri Teladan</span>
                                 <p class="small text-muted mb-0">
@@ -757,7 +662,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi5.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi5.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 1</span>
                                 <p class="small text-muted mb-0">
@@ -767,7 +672,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi6.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi6.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 1</span>
                                 <p class="small text-muted mb-0">
@@ -777,7 +682,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi7.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi7.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 3</span>
                                 <p class="small text-muted mb-0">
@@ -787,7 +692,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi8.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi8.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 3</span>
                                 <p class="small text-muted mb-0">
@@ -797,7 +702,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi9.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi9.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 2</span>
                                 <p class="small text-muted mb-0">
@@ -807,7 +712,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi10.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi10.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 1</span>
                                 <p class="small text-muted mb-0">
@@ -817,7 +722,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi11.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi11.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 1</span>
                                 <p class="small text-muted mb-0">
@@ -827,7 +732,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi12.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi12.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 1</span>
                                 <p class="small text-muted mb-0">
@@ -837,7 +742,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi13.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi13.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 2</span>
                                 <p class="small text-muted mb-0">
@@ -847,7 +752,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi14.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi14.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 2 Bersama</span>
                                 <p class="small text-muted mb-0">
@@ -857,7 +762,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi15.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi15.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 2</span>
                                 <p class="small text-muted mb-0">
@@ -867,7 +772,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi16.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi16.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 3</span>
                                 <p class="small text-muted mb-0">
@@ -877,7 +782,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi17.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi17.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 1</span>
                                 <p class="small text-muted mb-0">
@@ -887,7 +792,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi18.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi18.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 2</span>
                                 <p class="small text-muted mb-0">
@@ -897,7 +802,7 @@
                         </div>
 
                         <div class="card border-0 shadow-sm prestasi-card">
-                            <img src="assets/img/prestasi/prestasi19.webp" class="card-img-top">
+                            <img src="assets/img/prestasi/prestasi19.webp" class="card-img-top" loading="lazy">
                             <div class="card-body text-center p-3">
                                 <span class="badge bg-warning mb-2">Juara 2</span>
                                 <p class="small text-muted mb-0">
@@ -1195,7 +1100,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan1.webp">
+                                            <img src="assets/img/album/kegiatan1.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Lomba 17 Agustus</h5>
                                                 <p>Memperingati HUT RI Kemerdekaan</p>
@@ -1207,7 +1112,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ekstra">
-                                            <img src="assets/img/album/ekstra1.webp">
+                                            <img src="assets/img/album/ekstra1.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>JMSD Asy Syafi'</h5>
                                                 <p>Grup Hadroh Pondok Pesantren instagram @majlisasysyafi</p>
@@ -1219,7 +1124,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan2.webp">
+                                            <img src="assets/img/album/kegiatan2.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ujian Muhafadhoh</h5>
                                                 <p>Ujian Muhafadhoh Madrasah Diniyah</p>
@@ -1231,7 +1136,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji1.webp">
+                                            <img src="assets/img/album/ngaji1.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Kajian Khataman Al-Qur'an</h5>
                                                 <p>Khataman Al-Qur'an Bersama</p>
@@ -1243,7 +1148,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan3.webp">
+                                            <img src="assets/img/album/kegiatan3.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ziarah Akbar</h5>
                                                 <p>Ziarah Akbar ke Para Makam Waliyullah Pekalongan - Yogyakarta</p>
@@ -1255,7 +1160,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan23.webp">
+                                            <img src="assets/img/album/kegiatan23.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>SA Mart</h5>
                                                 <p>Kegiatan Jual Beli di Mini Market SA Mart</p>
@@ -1267,7 +1172,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ekstra">
-                                            <img src="assets/img/album/ekstra2.webp">
+                                            <img src="assets/img/album/ekstra2.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Majlis Niswatussyafi'</h5>
                                                 <p>Grup Hadroh Niswatussyafi' instagram @niswatussyafi</p>
@@ -1279,7 +1184,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan4.webp">
+                                            <img src="assets/img/album/kegiatan4.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Lomba 17 Agustus</h5>
                                                 <p>Memperingati HUT RI</p>
@@ -1291,7 +1196,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji2.webp">
+                                            <img src="assets/img/album/ngaji2.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Pengajian Selapanan</h5>
                                                 <p>Pengajian Selapanan bersama Wali Santri</p>
@@ -1303,7 +1208,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan5.webp">
+                                            <img src="assets/img/album/kegiatan5.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Upacara Hari Santri Nasional</h5>
                                                 <p>Amanat Pembina Upacara HSN</p>
@@ -1315,7 +1220,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ekstra">
-                                            <img src="assets/img/album/ekstra3.webp">
+                                            <img src="assets/img/album/ekstra3.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Pencak Silat PSHT</h5>
                                                 <p>Ekstrakulikuler Pencak Silat PSHT</p>
@@ -1327,7 +1232,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan6.webp">
+                                            <img src="assets/img/album/kegiatan6.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Koreksian Kitab</h5>
                                                 <p>Ujian Koreksian Kitab</p>
@@ -1339,7 +1244,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji3.webp">
+                                            <img src="assets/img/album/ngaji3.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Lailatul Muwadda'ah</h5>
                                                 <p>Khataman Ngaji Pasaran Bulan Ramadhan</p>
@@ -1351,7 +1256,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan7.webp">
+                                            <img src="assets/img/album/kegiatan7.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>OSABA</h5>
                                                 <p>Orientasi Santri Baru</p>
@@ -1363,7 +1268,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ekstra">
-                                            <img src="assets/img/album/ekstra4.webp">
+                                            <img src="assets/img/album/ekstra4.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>JMSD Asy Syafi'</h5>
                                                 <p>Group Rebana Pondok Pesantren instagram @majlisasysyafi</p>
@@ -1375,7 +1280,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan8.webp">
+                                            <img src="assets/img/album/kegiatan8.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>OSABA</h5>
                                                 <p>Orientasi Santri Baru</p>
@@ -1387,7 +1292,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji4.webp">
+                                            <img src="assets/img/album/ngaji4.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Lailatul Muwadda'ah</h5>
                                                 <p>Khataman Ngaji Pasaran Bulan Ramadhan</p>
@@ -1399,7 +1304,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan9.webp">
+                                            <img src="assets/img/album/kegiatan9.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ziarah Kubur</h5>
                                                 <p>Ziarah ke Makam KH. Syafi'i Abdul Majid (Pendiri Pesantren)</p>
@@ -1411,7 +1316,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ekstra">
-                                            <img src="assets/img/album/ekstra5.webp">
+                                            <img src="assets/img/album/ekstra5.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Tari Sufi</h5>
                                                 <p>Tarian Sufi Pondok Pesantren</p>
@@ -1423,7 +1328,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan10.webp">
+                                            <img src="assets/img/album/kegiatan10.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ziarah Waliyullah</h5>
                                                 <p>Ziarah Akbar Santri Putri Pekalongan - Kudus</p>
@@ -1435,7 +1340,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji5.webp">
+                                            <img src="assets/img/album/ngaji5.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Dewan Asatidz dan Pengurus</h5>
                                                 <p>Segenap Dewan Asatidz dan Pengurus Pondok Pesantren</p>
@@ -1447,7 +1352,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan11.webp">
+                                            <img src="assets/img/album/kegiatan11.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ziarah Waliyullah</h5>
                                                 <p>Ziarah Akbar Santri Putri Pekalongan - Kudus</p>
@@ -1459,7 +1364,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ekstra">
-                                            <img src="assets/img/album/ekstra6.webp">
+                                            <img src="assets/img/album/ekstra6.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Pencak Silat Pagar Nusa</h5>
                                                 <p>Ekstrakulikuler Pencak Silat Pagar Nusa</p>
@@ -1471,7 +1376,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan12.webp">
+                                            <img src="assets/img/album/kegiatan12.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ziarah Waliyullah</h5>
                                                 <p>Ziarah Akbar Santri Putri Pekalongan - Kudus</p>
@@ -1483,7 +1388,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji6.webp">
+                                            <img src="assets/img/album/ngaji6.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Pembacaan Maulid Memperingati Isra' Mi'raj</h5>
                                                 <p>Pembacaan Maulid Simtudduror bersama Habib Alwi dan Group Hadroh
@@ -1496,7 +1401,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan13.webp">
+                                            <img src="assets/img/album/kegiatan13.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ziarah Kubur</h5>
                                                 <p>Ziarah Kubur ke Makam KH. Akrom Sofwan (Pendiri Pondok Pesantren)</p>
@@ -1508,7 +1413,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ekstra">
-                                            <img src="assets/img/album/ekstra7.webp">
+                                            <img src="assets/img/album/ekstra7.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Pelatih/Warga PSHT</h5>
                                                 <p>Warga PSHT yang Melatih di Pesantren</p>
@@ -1520,7 +1425,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan14.webp">
+                                            <img src="assets/img/album/kegiatan14.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ziarah Kubur</h5>
                                                 <p>Ziarah Kubur ke Makam KH. Akrom Sofwan (Pendiri Pondok Pesantren)</p>
@@ -1532,7 +1437,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji7.webp">
+                                            <img src="assets/img/album/ngaji7.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ngaji Bandongan</h5>
                                                 <p>Ngaji Bandongan Bersama Abah Yai Muharrom</p>
@@ -1544,7 +1449,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan15.webp">
+                                            <img src="assets/img/album/kegiatan15.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ziarah Kubur</h5>
                                                 <p>Ziarah Kubur ke Makam KH. Akrom Sofwan (Pendiri Pondok Pesantren)</p>
@@ -1556,7 +1461,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ekstra">
-                                            <img src="assets/img/album/ekstra8.webp">
+                                            <img src="assets/img/album/ekstra8.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Tari Sufi PPSSA</h5>
                                                 <p>Tarian Sufi Ponpes Syafi'i Akrom Pekalongan</p>
@@ -1568,7 +1473,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan16.webp">
+                                            <img src="assets/img/album/kegiatan16.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Tadarus Qur'an</h5>
                                                 <p>Ponpes Putri: Tadarusan Al-Qur'an Bersama</p>
@@ -1580,7 +1485,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji8.webp">
+                                            <img src="assets/img/album/ngaji8.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Ngaji Bandongan</h5>
                                                 <p>Ngaji Bandongan Bersama Abah Yai Muharrom</p>
@@ -1592,7 +1497,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan17.webp">
+                                            <img src="assets/img/album/kegiatan17.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Tadarus Qur'an</h5>
                                                 <p>Ponpes Putri: Tadarusan Al-Qur'an Bersama</p>
@@ -1604,7 +1509,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji9.webp">
+                                            <img src="assets/img/album/ngaji9.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Petugas Pengajian Rutinan</h5>
                                                 <p>Petugas Pengajian Rutinan Majlis Ta'lim Ihya Ulumuddin</p>
@@ -1616,7 +1521,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan18.webp">
+                                            <img src="assets/img/album/kegiatan18.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Tadarus Qur'an</h5>
                                                 <p>Ponpes Putri: Tadarusan Al-Qur'an Bersama</p>
@@ -1628,7 +1533,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji10.webp">
+                                            <img src="assets/img/album/ngaji10.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Majlis Ta'lim Kitab Ihya' Ulumuddin</h5>
                                                 <p>Pengajian Rutinan Majlis Ta'lim Ihya Ulumuddin</p>
@@ -1640,7 +1545,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan19.webp">
+                                            <img src="assets/img/album/kegiatan19.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Budidaya Lele</h5>
                                                 <p>Santri Putra Membudidayakan Ikan Lele</p>
@@ -1652,7 +1557,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji11.webp">
+                                            <img src="assets/img/album/ngaji11.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Pengajian Akbar</h5>
                                                 <p>Pengajian Maulid Akbar dalam rangka memperingati Isra' Mi'raj</p>
@@ -1664,7 +1569,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan20.webp">
+                                            <img src="assets/img/album/kegiatan20.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Belajar Bersama</h5>
                                                 <p>Belahjar Bersama Setelah Madin Santri Putra</p>
@@ -1676,7 +1581,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji12.webp">
+                                            <img src="assets/img/album/ngaji12.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Kegiatan Belajar Mengajar Madin</h5>
                                                 <p>kegiatan Belajar Mengajar Madrasah Diniyah PPSSA Putra</p>
@@ -1688,7 +1593,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan21.webp">
+                                            <img src="assets/img/album/kegiatan21.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Jama'ah Kitab Ihya' Ulumuddin</h5>
                                                 <p>Jama'ah Majelis Ta'lim Kitab Ihya' Ulumuddin</p>
@@ -1700,7 +1605,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item ngaji">
-                                            <img src="assets/img/album/ngaji13.webp">
+                                            <img src="assets/img/album/ngaji13.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Foto Bersama Maulana Habib Luthfi bin Yahya</h5>
                                                 <p>Sowan Pengasuh ke Ndalem Maulana Habib Luthfi bin Ali bin Hasyim bin
@@ -1713,7 +1618,7 @@
 
                                     <div class="col-lg-4 col-md-6">
                                         <div class="album-item kegiatan">
-                                            <img src="assets/img/album/kegiatan22.webp">
+                                            <img src="assets/img/album/kegiatan22.webp" loading="lazy">
                                             <div class="album-info">
                                                 <h5>Jama'ah Kitab Ihya' Ulumuddin</h5>
                                                 <p>Jama'ah Majelis Ta'lim Kitab Ihya' Ulumuddin</p>
@@ -1778,7 +1683,8 @@
                     </section>
 
                     <!-- Scroll Top -->
-                    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+                    <a href="#" id="scroll-top" class="scroll-top" aria-label="Scroll to Top" d-flex align-items-center
+                        justify-content-center">
                         <i class="bi bi-arrow-up-short"></i>
                     </a>
 
@@ -1822,328 +1728,8 @@
         });
     </script>
 
-    <!-- Navigation & Accordion Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const body = document.body;
-            const header = document.querySelector('.header');
-            const hero = document.querySelector('.hero');
-            const mobileBtn = document.querySelector('.mobile-nav-toggle');
-            const navmenu = document.querySelector('.navmenu');
-
-            /* Mobile Nav Toggle */
-            function toggleNav() {
-                body.classList.toggle('mobile-nav-active');
-                mobileBtn.classList.toggle('bi-list');
-                mobileBtn.classList.toggle('bi-x');
-            }
-
-            if (mobileBtn) mobileBtn.addEventListener('click', toggleNav);
-
-            /* Close nav when clicking outside */
-            if (navmenu) {
-                navmenu.addEventListener('click', e => {
-                    if (e.target === navmenu && body.classList.contains('mobile-nav-active')) {
-                        toggleNav();
-                    }
-                });
-            }
-
-            /* Dropdown Handling */
-            document.querySelectorAll('.navmenu .dropdown > a').forEach(drop => {
-                drop.addEventListener('click', e => {
-                    if (window.innerWidth < 1200) {
-                        e.preventDefault();
-                        drop.parentNode.classList.toggle('active');
-                    }
-                });
-            });
-
-            /* Close on link click */
-            document.querySelectorAll('.navmenu a:not(.dropdown > a)').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (body.classList.contains('mobile-nav-active')) {
-                        toggleNav();
-                    }
-                });
-            });
-
-            /* Header Scroll Effect */
-            function headerScroll() {
-                if (hero && window.scrollY > hero.offsetHeight * 0.3) {
-                    header.classList.add('scrolled');
-                } else if (header) {
-                    header.classList.remove('scrolled');
-                }
-            }
-
-            window.addEventListener('scroll', headerScroll);
-            headerScroll();
-
-            /* Accordion Smooth Open */
-            document.querySelectorAll(".accordion-item").forEach(item => {
-                const accHeader = item.querySelector(".accordion-header");
-                if (accHeader) {
-                    accHeader.addEventListener("click", () => {
-                        item.classList.toggle("active");
-                    });
-                }
-            });
-
-            /* Initialize GLightbox for image gallery */
-            if (typeof GLightbox !== 'undefined') {
-                const lightbox = GLightbox({
-                    touchNavigation: true,
-                    loop: true,
-                    autoplayVideos: true
-                });
-            }
-
-            /* Portfolio Filter - DIPERBAIKI */
-            const filterButtons = document.querySelectorAll('.portfolio-filters li');
-            const portfolioItems = document.querySelectorAll('.portfolio-item');
-
-            // Set initial state with transition
-            portfolioItems.forEach(item => {
-                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-                item.style.opacity = '1';
-                item.style.transform = 'scale(1)';
-            });
-
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const filter = button.getAttribute('data-filter');
-
-                    // Update active button
-                    filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-                    button.classList.add('filter-active');
-
-                    // Filter items with smooth animation
-                    portfolioItems.forEach(item => {
-                        const shouldShow = filter === '*' || item.classList.contains(filter.substring(1));
-
-                        if (shouldShow) {
-                            item.style.display = 'block';
-                            // Force reflow untuk memastikan transisi berjalan
-                            item.offsetHeight;
-                            setTimeout(() => {
-                                item.style.opacity = '1';
-                                item.style.transform = 'scale(1)';
-                            }, 10);
-                        } else {
-                            item.style.opacity = '0';
-                            item.style.transform = 'scale(0.8)';
-                            setTimeout(() => {
-                                item.style.display = 'none';
-                            }, 300);
-                        }
-                    });
-                });
-            });
-        });
-
-        /* Smooth Scroll Header Effect */
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('.header');
-            if (header) {
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            }
-        });
-
-        /* Scroll Prestasi Function */
-        function scrollPrestasi(direction) {
-            const container = document.getElementById('prestasiScroll');
-            if (container) {
-                const card = container.querySelector('.prestasi-card');
-                const cardWidth = card ? card.offsetWidth + 16 : 300;
-                container.scrollBy({
-                    left: direction * cardWidth,
-                    behavior: 'smooth'
-                });
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const body = document.body;
-            const header = document.querySelector('.header');
-            const hero = document.querySelector('.hero');
-            const mobileBtn = document.querySelector('.mobile-nav-toggle');
-            const navmenu = document.querySelector('.navmenu');
-
-            /* Mobile Nav Toggle */
-            function toggleNav() {
-                body.classList.toggle('mobile-nav-active');
-                mobileBtn.classList.toggle('bi-list');
-                mobileBtn.classList.toggle('bi-x');
-            }
-
-            if (mobileBtn) mobileBtn.addEventListener('click', toggleNav);
-
-            /* Close nav when clicking outside */
-            if (navmenu) {
-                navmenu.addEventListener('click', e => {
-                    if (e.target === navmenu && body.classList.contains('mobile-nav-active')) {
-                        toggleNav();
-                    }
-                });
-            }
-
-            /* Dropdown Handling */
-            document.querySelectorAll('.navmenu .dropdown > a').forEach(drop => {
-                drop.addEventListener('click', e => {
-                    if (window.innerWidth < 1200) {
-                        e.preventDefault();
-                        drop.parentNode.classList.toggle('active');
-                    }
-                });
-            });
-
-            /* Close on link click */
-            document.querySelectorAll('.navmenu a:not(.dropdown > a)').forEach(link => {
-                link.addEventListener('click', () => {
-                    if (body.classList.contains('mobile-nav-active')) {
-                        toggleNav();
-                    }
-                });
-            });
-
-            /* Header Scroll Effect */
-            function headerScroll() {
-                if (hero && window.scrollY > hero.offsetHeight * 0.3) {
-                    header.classList.add('scrolled');
-                } else if (header) {
-                    header.classList.remove('scrolled');
-                }
-            }
-
-            window.addEventListener('scroll', headerScroll);
-            headerScroll();
-
-            /* Accordion Smooth Open */
-            document.querySelectorAll(".accordion-item").forEach(item => {
-                const accHeader = item.querySelector(".accordion-header");
-                if (accHeader) {
-                    accHeader.addEventListener("click", () => {
-                        item.classList.toggle("active");
-                    });
-                }
-            });
-
-            /* Initialize GLightbox for image gallery */
-            if (typeof GLightbox !== 'undefined') {
-                const lightbox = GLightbox({
-                    touchNavigation: true,
-                    loop: true,
-                    autoplayVideos: true
-                });
-            }
-
-            /* Portfolio Filter - DIPERBAIKI */
-            const filterButtons = document.querySelectorAll('.portfolio-filters li');
-            const portfolioItems = document.querySelectorAll('.portfolio-item');
-
-            // Set initial state with transition
-            portfolioItems.forEach(item => {
-                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-                item.style.opacity = '1';
-                item.style.transform = 'scale(1)';
-            });
-
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const filter = button.getAttribute('data-filter');
-
-                    // Update active button
-                    filterButtons.forEach(btn => btn.classList.remove('filter-active'));
-                    button.classList.add('filter-active');
-
-                    // Filter items with smooth animation
-                    portfolioItems.forEach(item => {
-                        const shouldShow = filter === '*' || item.classList.contains(filter.substring(1));
-
-                        if (shouldShow) {
-                            item.style.display = 'block';
-                            // Force reflow untuk memastikan transisi berjalan
-                            item.offsetHeight;
-                            setTimeout(() => {
-                                item.style.opacity = '1';
-                                item.style.transform = 'scale(1)';
-                            }, 10);
-                        } else {
-                            item.style.opacity = '0';
-                            item.style.transform = 'scale(0.8)';
-                            setTimeout(() => {
-                                item.style.display = 'none';
-                            }, 300);
-                        }
-                    });
-                });
-            });
-        });
-
-        /* Smooth Scroll Header Effect */
-        window.addEventListener('scroll', function () {
-            const header = document.querySelector('.header');
-            if (header) {
-                if (window.scrollY > 50) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            }
-        });
-
-        /* Scroll Prestasi Function */
-        function scrollPrestasi(direction) {
-            const container = document.getElementById('prestasiScroll');
-            if (container) {
-                const card = container.querySelector('.prestasi-card');
-                const cardWidth = card ? card.offsetWidth + 16 : 300;
-                container.scrollBy({
-                    left: direction * cardWidth,
-                    behavior: 'smooth'
-                });
-            }
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-
-            /* GLIGHTBOX */
-            GLightbox({
-                selector: ".glightbox",
-                loop: true
-            });
-
-            /* FILTER RINGAN */
-            const buttons = document.querySelectorAll(".album-filters .nav-link");
-            const items = document.querySelectorAll(".album-item");
-
-            buttons.forEach(btn => {
-                btn.addEventListener("click", () => {
-
-                    buttons.forEach(b => b.classList.remove("active"));
-                    btn.classList.add("active");
-
-                    const filter = btn.dataset.filter;
-
-                    items.forEach(item => {
-                        const col = item.closest(".col-lg-4, .col-md-6");
-
-                        if (filter === "*" || item.classList.contains(filter.substring(1))) {
-                            col.style.display = "";
-                        } else {
-                            col.style.display = "none";
-                        }
-                    });
-                });
-            });
-
-        });
-    </script>
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 

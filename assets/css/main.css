@@ -27,6 +27,21 @@
     --nav-dropdown-color: #060606;
     --nav-dropdown-hover-color: #ef6603;
 
+
+    /* UI Variables */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-pill: 50px;
+
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.12);
+
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
     scroll-behavior: smooth;
 }
 
@@ -44,7 +59,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 0.3s ease;
+    transition: all var(--transition-base);
 }
 
 body {
@@ -148,7 +163,7 @@ h6 {
         font-weight: 500;
         display: flex;
         align-items: center;
-        border-radius: 50px;
+        border-radius: var(--radius-pill);
         transition: 0.3s;
         white-space: nowrap;
     }
@@ -408,7 +423,7 @@ h6 {
 
 .hero .btn-get-started {
     padding: 12px 32px;
-    border-radius: 50px;
+    border-radius: var(--radius-pill);
     background: var(--accent-color);
     border: 2px solid var(--accent-color);
     color: var(--contrast-color);
@@ -501,7 +516,7 @@ h6 {
 }
 
 .section-title h2 {
-    font-size: 14px;
+    font-size: clamp(18px, 2vw, 24px);
     letter-spacing: 2px;
     text-transform: uppercase;
     color: var(--accent-color);
@@ -546,7 +561,7 @@ h6 {
    CARDS & COMPONENTS
 */
 .card {
-    border-radius: 14px;
+    border-radius: var(--radius-md);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
 }
@@ -575,16 +590,16 @@ h6 {
 .accordion-modern .accordion-item {
     border: none;
     margin-bottom: 14px;
-    border-radius: 14px;
+    border-radius: var(--radius-md);
     overflow: hidden;
     background: var(--contrast-color);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow-md);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .accordion-modern .accordion-item:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.09);
+    box-shadow: var(--shadow-hover);
 }
 
 .accordion-modern .accordion-button {
@@ -641,11 +656,50 @@ h6 {
     color: var(--accent-color);
 }
 
+.registration-highlight {
+    background: rgba(239, 102, 3, 0.08);
+    border-left: 4px solid var(--color-accent);
+}
+
+.registration-highlight h6 {
+    color: var(--color-accent);
+}
+
+.btn-instagram {
+    background: var(--color-accent);
+    border: 1px solid #d95b02;
+    color: #d95b02;
+    transition: all .3s ease;
+}
+
+.btn-instagram:hover {
+    background: #d95b02;
+    border-color: #d95b02;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(239, 102, 3, .3);
+}
+
 /*
    PRESTASI SECTION
 */
 .prestasi-scroll {
     padding: 10px 40px;
+
+    /* UI Variables */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-pill: 50px;
+
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 12px 32px rgba(0, 0, 0, 0.12);
+
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 }
@@ -744,34 +798,115 @@ h6 {
 }
 
 /* =========================
-   SARPRAS SECTION
+   SARPRAS & SPS SECTION
 ========================= */
+.sarpras-section {
+    background-color: var(--surface-color);
+    position: relative;
+}
+
+.sarpras-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(239, 102, 3, 0.03) 0%, rgba(239, 102, 3, 0) 100%);
+    pointer-events: none;
+}
+
+.sarpras-card,
+.sps-card {
+    background: var(--background-color);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+    padding: 32px;
+    height: 100%;
+}
+
+.sarpras-card:hover,
+.sps-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.sarpras-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+}
 
 .sarpras-item {
     display: flex;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: var(--background-color);
+    border-radius: var(--radius-sm);
     font-size: 0.9rem;
-    color: #6c757d;
+    color: var(--default-color);
+    transition: var(--transition-base);
+    border-left: 3px solid transparent;
+}
+
+.sarpras-item:hover {
+    background: var(--surface-color);
+    box-shadow: var(--shadow-sm);
+    border-left-color: var(--accent-color);
+    transform: translateX(4px);
 }
 
 .sarpras-item i {
-    margin-top: 2px;
-    font-size: 1rem;
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    flex-shrink: 0;
 }
 
-/* SPS List */
+.sps-list {
+    margin-top: 20px;
+}
+
 .sps-list li {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
-    font-size: 0.9rem;
-    color: #6c757d;
+    gap: 12px;
+    padding: 14px 16px;
     margin-bottom: 10px;
+    background: var(--background-color);
+    border-radius: var(--radius-sm);
+    font-size: 0.92rem;
+    color: var(--default-color);
+    transition: var(--transition-base);
+}
+
+.sps-list li:hover {
+    background: rgba(239, 102, 3, 0.08);
+    transform: translateX(4px);
 }
 
 .sps-list i {
-    margin-top: 3px;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.btn-instagram {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border: none;
+    transition: var(--transition-base);
+}
+
+.btn-instagram:hover {
+    background-color: color-mix(in srgb, var(--accent-color), #000 15%);
+    color: var(--contrast-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
 }
 
 /* Mobile polish */
@@ -827,9 +962,9 @@ h6 {
 .album-item {
     position: relative;
     overflow: hidden;
-    border-radius: 14px;
+    border-radius: var(--radius-md);
     background: var(--contrast-color);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+    box-shadow: var(--shadow-sm);
 }
 
 .album-item img {
@@ -917,7 +1052,7 @@ h6 {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: 0.3s ease;
+    transition: all var(--transition-base);
 }
 
 .contact .info-item h3 {
@@ -982,7 +1117,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.3s ease;
+    transition: all var(--transition-base);
 }
 
 .footer .social-links a:hover {
@@ -1043,4 +1178,176 @@ h6 {
         font-size: 36px;
         margin-bottom: 15px;
     }
+}
+
+/* =========================================================
+   GLOBAL RESPONSIVENESS & FLUID TYPOGRAPHY (320px - 2560px)
+========================================================= */
+
+/* 1. FLUID TYPOGRAPHY & SPACING */
+:root {
+    /* Fluid Font Sizes: Minimum at 320px, scales up to Maximum at 1200px+ */
+    --fs-hero: clamp(2rem, 5vw + 1rem, 3.5rem);
+    --fs-h2: clamp(1.75rem, 4vw + 1rem, 2.5rem);
+    --fs-h3: clamp(1.5rem, 3vw + 0.5rem, 2rem);
+    --fs-body: clamp(0.9rem, 1vw + 0.5rem, 1.1rem);
+
+    /* Fluid Section Padding */
+    --section-padding-y: clamp(40px, 8vw, 80px);
+}
+
+body {
+    font-size: var(--fs-body);
+    overflow-x: hidden;
+    /* Mencegah layar bergeser ke kiri-kanan (horizontal overflow) */
+}
+
+section {
+    padding-top: var(--section-padding-y) !important;
+    padding-bottom: var(--section-padding-y) !important;
+}
+
+h1,
+h2,
+.hero h2 {
+    font-size: var(--fs-hero) !important;
+    line-height: 1.2;
+}
+
+.section-title h2 {
+    font-size: clamp(18px, 2vw, 22px) !important;
+}
+
+h3,
+.card-title {
+    font-size: var(--fs-h3);
+}
+
+/* 2. IMAGE & MEDIA SAFETY */
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* 3. ULTRA WIDE SCREENS (1440px - 2560px) */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1380px;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    /* Mencegah hero terlalu tinggi (memanjang) di layar lebar */
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+}
+
+/* 4. LAPTOP & DESKTOP (992px - 1366px) */
+@media (max-width: 1199px) {
+    .prestasi-card img {
+        height: 220px;
+    }
+
+    .album-item img {
+        height: 220px;
+    }
+}
+
+/* 5. TABLET (768px - 991px) */
+@media (max-width: 991px) {
+    .nav-pills .nav-link {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .contact .info-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact .info-item i {
+        margin-bottom: 10px;
+    }
+}
+
+/* 6. MOBILE BESAR & LANDSCAPE (480px - 767px) */
+@media (max-width: 767px) {
+    .hero .btn-get-started {
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .album-item img {
+        height: 200px;
+    }
+
+    .footer .social-links a {
+        width: 44px;
+        /* Mudah disentuh */
+        height: 44px;
+    }
+}
+
+/* 7. MOBILE KECIL (320px - 414px) */
+@media (max-width: 414px) {
+    .section-title h2::after {
+        width: 40px;
+        /* Garis bawah judul lebih kecil */
+    }
+
+    .nav-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    .sps-list li,
+    .sarpras-item {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+    }
+
+    .identitas-item {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 5px;
+    }
+
+    .identitas-item strong {
+        text-align: left !important;
+        max-width: 100% !important;
+    }
+}
+
+/* FIX: Prestasi Horizontal Scroll on Mobile */
+.prestasi-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 15px;
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.prestasi-scroll-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
 }
